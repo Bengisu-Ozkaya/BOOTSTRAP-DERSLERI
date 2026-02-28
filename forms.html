@@ -20,7 +20,45 @@
             </div>
 
             <div class="form-group" style="margin: 10px;">
+                <select class="form-control" id="plan">
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Individual</option>
+                </select>
+            </div>
+
+            <div class="form-check" style="margin-left: -10px;">
+                <div style="border: 2px solid rgb(211, 211, 211);">
+                    <label>Gender:</label>
+                    <br>
+                    <div class="form-check" style="margin: 10px;" >
+                        <label for="woman" class="form-check-label">
+                            <input type="radio" class="form-check-input" id="woman">Woman
+                        </label>
+                    </div>
+
+                    <div class="form-check " style="margin: 10px;">
+                        <label for="man" class="form-check-label">
+                            <input type="radio" class="form-check-input" id="man">Man
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="form-group" style="margin: 10px;">
                 <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+
+            <div class="form-group" style="margin: 10px;">
+                <textarea rows="5" class="form-control" id="about" placeholder="About"></textarea>
+            </div>
+
+            <div class="form-check disabled" style="margin: 10px;">
+                <label for="term" class="form-check-label">
+                    <input type="checkbox" disabled class="form-check-input" id="term">I accept the terms
+                </label>
             </div>
 
             <button type="submit" class="btn btn-success" style="margin: 10px;">Kayıt Ol</button>
@@ -39,3 +77,11 @@
     crossorigin="anonymous"></script>
 
 </html>
+
+<!--FORM KONTROL-->
+<!--
+    form-control -> default
+    form-control-sm -> küçük boyut
+    form-control-lg -> büyük boyut
+-->
+<!--Checkbox için form-control -> "form-control-input" şeklindedir -->
